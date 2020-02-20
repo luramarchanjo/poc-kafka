@@ -43,8 +43,26 @@ sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <NAME>
 
 ```
 
-### Reading all messagens
+#### Reading all messagens
 
 ```
 sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <NAME> --from-beginning
+```
+
+## Consumer Group
+
+```
+sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <NAME> --group <GROUP_NAME>
+```
+
+#### List Consumer Group
+
+```
+sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+```
+
+#### Describe Consumer Group
+
+```
+sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe -group <GROUP_NAME>
 ```
