@@ -75,6 +75,10 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAM
 
 ## Tools
 
-#### Kafka UI
+#### UI
 
 [Conduktor](https://www.conduktor.io/)
+
+#### CLI
+
+[Kafkacat](https://github.com/edenhill/kafkacat)
