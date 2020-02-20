@@ -33,3 +33,18 @@ sh kafka-topics.sh --zookeeper localhost:2181 --topic <NAME> --describe
 ```
 sh kafka-console-producer.sh --topic <NAME> --broker-list localhost:9092
 ```
+
+## Consumers
+
+#### Reading only new messages
+
+```
+sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic
+
+```
+
+### Reading all messagens
+
+```
+sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --from-beginning
+```
