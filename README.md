@@ -72,3 +72,9 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe -group 
 ```
 sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAME> --reset-offsets --to-earliest --execute --all-topics
 ```
+
+## Tools
+
+#### Kafka UI
+
+[Conduktor](https://www.conduktor.io/)
