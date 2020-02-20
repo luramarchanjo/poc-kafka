@@ -66,3 +66,9 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 ```
 sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe -group <GROUP_NAME>
 ```
+
+#### Resetting Offset
+
+```
+sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAME> --reset-offsets --to-earliest --execute --all-topics
+```
