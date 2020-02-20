@@ -39,12 +39,12 @@ sh kafka-console-producer.sh --topic <NAME> --broker-list localhost:9092
 #### Reading only new messages
 
 ```
-sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic
+sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <NAME>
 
 ```
 
 ### Reading all messagens
 
 ```
-sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first_topic --from-beginning
+sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <NAME> --from-beginning
 ```
