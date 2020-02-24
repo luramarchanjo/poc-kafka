@@ -1,11 +1,13 @@
-package com.example.springapi
+package com.example.spring
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.kafka.annotation.EnableKafka
 
 @SpringBootApplication
-class SpringApiApplication
+@EnableKafka
+class Application
 
 fun main(args: Array<String>) {
-	runApplication<SpringApiApplication>(*args)
+	runApplication<Application>(*args)
 }
