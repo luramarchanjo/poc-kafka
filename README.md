@@ -73,6 +73,10 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe -group 
 sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAME> --reset-offsets --to-earliest --execute --all-topics
 ```
 
+## Frameworks
+
+[Spring Kafka](https://docs.spring.io/spring-kafka/reference/html/#preface)
+
 ## Tools
 
 #### UI
