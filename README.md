@@ -75,6 +75,8 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAM
 
 ## Frameworks
 
+[Kafka Java API](https://kafka.apache.org/documentation/#api)
+
 [Spring Kafka](https://docs.spring.io/spring-kafka/reference/html/#preface)
 
 ## Tools
