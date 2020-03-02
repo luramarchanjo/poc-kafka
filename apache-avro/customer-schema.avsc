@@ -10,6 +10,7 @@
         { "name" : "height", "type" : "double", "doc" : "Height of the customer"},
         { "name" : "weight", "type" : "double", "doc" : "Weight of the customer"},
         { "name" : "automated_email", "type" : "boolean", "default" : true, "doc" : "true if customer wants markating email" },
-        { "name" : "status", "type" : "enum", "symbols" : [ "BRONZE", "SILVER", "GOLD" ], "doc" : "Status of the customer" }
+        { "name" : "status", "type" : "enum", "symbols" : [ "BRONZE", "SILVER", "GOLD" ], "doc" : "Status of the customer" },
+        { "name" : "emails", "type" : "array", "items" : "string", "doc" : "List of emails" }
     ]
 }
