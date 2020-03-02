@@ -1,0 +1,14 @@
+{
+    "type" : "record",
+    "namespace" : "com.example",
+    "name" : "Customer",
+    "doc" : "Avro Schema for Customer Message",
+    "fields" : [
+        { "name" : "first_name", "type" : "string", "doc" : "First name of the customer"},
+        { "name" : "last_name", "type" : "string", "doc" : "Last name of the customer"},
+        { "name" : "age", "type" : "int", "doc" : "Age of the customer"},
+        { "name" : "height", "type" : "double", "doc" : "Height of the customer"},
+        { "name" : "weight", "type" : "double", "doc" : "Weight of the customer"},
+        { "automated_email" : "weight", "type" : "boolean", "default" : true, "doc" : "true if customer wants markating email" }
+    ]
+}
