@@ -27,7 +27,8 @@
             { "name" : "status", "type" : "enum", "symbols" : [ "BRONZE", "SILVER", "GOLD" ], "doc" : "Status of the customer" },
             { "name" : "emails", "type" : "array", "items" : "string", "doc" : "List of emails" },
             { "name" : "secrets", "type" : "map", "values" : "string", "doc" : "Map of secrets questions" },
-            { "name" : "address" , "type" : "com.example.CustomerAddress" }
+            { "name" : "address" , "type" : "com.example.CustomerAddress" },
+            { "name" : "at", "type" : "long", "logicalType" : "timestamp-millis", "doc" : "The date whant the event was created"}
         ]
     }
 ]
