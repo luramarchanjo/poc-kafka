@@ -11,10 +11,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>apache-avro</artifactId>
+	<artifactId>apache-avro-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apache-avro</name>
-	<description>Demo project for Spring Boot</description>
+	<name>${artifactId}</name>
 
 	<properties>
 		<java.version>1.8</java.version>

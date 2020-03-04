@@ -1,8 +1,7 @@
-package com.example.apacheavro.domain
+package com.example.apacheavro
 
-import org.apache.kafka.clients.consumer.ConsumerRecord
+import com.example.apacheavro.domain.Employee
 import org.slf4j.LoggerFactory
-import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Service
@@ -22,13 +21,6 @@ class EmployeeService(val kafkaTemplate: KafkaTemplate<String, Employee>) {
         employee.setLastName(UUID.randomUUID().toString())
 
         kafkaTemplate.sendDefault(employee)
-        log.info("Generated random data")
-    }
-
-    @KafkaListener(topics = ["\${spring.kafka.template.default-topic}"])
-    fun consumer(record: ConsumerRecord<String, Employee>) {
-        log.info("Consuming $record")
-        log.info("Consumed $record")
     }
 
 }
