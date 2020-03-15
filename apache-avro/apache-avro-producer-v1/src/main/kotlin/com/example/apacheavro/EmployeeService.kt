@@ -1,6 +1,6 @@
 package com.example.apacheavro
 
-import com.example.apacheavro.domain.EmployeeV2
+import com.example.apacheavro.domain.Employee
 import org.slf4j.LoggerFactory
 import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.scheduling.annotation.Scheduled
@@ -8,16 +8,17 @@ import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
-class EmployeeService(val kafkaTemplate: KafkaTemplate<String, EmployeeV2>) {
+class EmployeeService(val kafkaTemplate: KafkaTemplate<String, Employee>) {
 
     private final val log = LoggerFactory.getLogger(this::class.java)
 
     @Scheduled(initialDelay = 1000, fixedDelay = 3000)
     fun producer() {
         log.info("Generating random data")
-        val employee = EmployeeV2()
+        val employee = Employee()
         employee.setId(Random().nextInt())
-        employee.setName(UUID.randomUUID().toString())
+        employee.setFirstName(UUID.randomUUID().toString());
+        employee.setLastName(UUID.randomUUID().toString())
 
         kafkaTemplate.sendDefault(employee)
     }

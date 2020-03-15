@@ -1,7 +1,6 @@
 package com.example.apacheavro
 
 import com.example.apacheavro.domain.Employee
-import com.example.apacheavro.domain.EmployeeV2
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.slf4j.LoggerFactory
 import org.springframework.kafka.annotation.KafkaListener
