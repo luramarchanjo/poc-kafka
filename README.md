@@ -89,7 +89,7 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAM
 
 [Kafkacat](https://github.com/edenhill/kafkacat)
 
-#### Kafka Docker for development
+#### Kafka, Zookeeper, Schema Registry, Kafka-Connect for development
 
 To start [Kafka, Zookeeper, Schema Registry, Kafka-Connect](https://github.com/lensesio/fast-data-dev) run the command below:
 
