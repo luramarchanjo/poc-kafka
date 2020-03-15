@@ -91,8 +91,8 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAM
 
 #### Kafka Docker for development
 
-To start Kafka, Zookeeper, Schema Registry, Kafka-Connect run the command below:
+To start [Kafka, Zookeeper, Schema Registry, Kafka-Connect](https://github.com/lensesio/fast-data-dev) run the command below:
 
 `docker-compouse up`
 
-[Fast data dev](https://github.com/lensesio/fast-data-dev)
+After one minute, open the link http://127.0.0.1:3030
