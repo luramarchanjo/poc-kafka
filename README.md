@@ -79,6 +79,8 @@ sh kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group <GROUP_NAM
 
 [Spring Kafka](https://docs.spring.io/spring-kafka/reference/html/#preface)
 
+[Apache Avro](https://avro.apache.org/)
+
 ## Tools
 
 #### UI
