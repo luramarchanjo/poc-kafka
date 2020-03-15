@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>apache-avro-consumer</artifactId>
+	<artifactId>apache-avro-producer-v1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>${artifactId}</name>
 

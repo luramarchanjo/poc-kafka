@@ -1,6 +1,7 @@
 package com.example.apacheavro
 
 import com.example.apacheavro.domain.Employee
+import com.example.apacheavro.domain.EmployeeV2
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.slf4j.LoggerFactory
 import org.springframework.kafka.annotation.KafkaListener
@@ -13,7 +14,7 @@ class EmployeeService() {
 
     @KafkaListener(topics = ["\${spring.kafka.template.default-topic}"])
     fun consumer(record: ConsumerRecord<String, Employee>) {
-        log.info("Consuming $record")
+        log.info("Consuming ${record.value()}")
     }
 
 }
