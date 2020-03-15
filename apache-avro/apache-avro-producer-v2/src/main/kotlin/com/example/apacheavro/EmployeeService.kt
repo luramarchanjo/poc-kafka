@@ -18,6 +18,7 @@ class EmployeeService(val kafkaTemplate: KafkaTemplate<String, Employee>) {
         employee.setId(Random().nextInt())
         employee.setFirstName(UUID.randomUUID().toString());
         employee.setLastName(UUID.randomUUID().toString())
+        employee.setAge(Random().nextInt())
 
         log.info("Creating $employee")
         kafkaTemplate.sendDefault(employee)
